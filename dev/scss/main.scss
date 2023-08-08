@@ -1,0 +1,90 @@
+@import './utils/fonts.scss';
+@import './utils/mixin.scss';
+@import './utils/vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background: #FFF;
+}
+
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: normal;
+  color: $white;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 500;
+
+  @include minw($sm-pc) {
+    font-size: 2.4rem;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+  font-family: inherit;
+  font-size: inherit;
+
+  &:hover,
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+}
+
+
+.container {
+  padding: 0 1.5rem;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.header {}
+
+.footer {}
+
